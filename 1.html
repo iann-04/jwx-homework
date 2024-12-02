@@ -11,16 +11,19 @@
             color: #333;
             margin: 0;
             padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/triangles.png'); /* 背景添加可爱纹理 */
         }
         header {
             background-color: #ffebc0;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             border-bottom: 5px solid #ffa500;
+            position: relative;
         }
         h1 {
             font-size: 36px;
             color: #f4511e;
+            font-family: 'Comic Sans MS', sans-serif; /* 更加活泼的字体 */
         }
         h2 {
             color: #f4511e;
@@ -34,6 +37,7 @@
             font-size: 28px;
             color: #f4511e;
             margin-bottom: 20px;
+            font-family: 'Comic Sans MS', sans-serif; /* 更加活泼的字体 */
         }
         .bio {
             font-size: 18px;
@@ -53,6 +57,10 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+            transition: transform 0.3s ease; /* 图片放大动效 */
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1); /* 图片悬停放大 */
         }
         .image-caption {
             text-align: center;
@@ -65,6 +73,11 @@
             right: 20px;
             width: 50px;
             height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease; /* 鼠标悬停时改变透明度 */
+        }
+        .tiger-icon:hover {
+            opacity: 1; /* 鼠标悬停时显现图标 */
         }
         .cute-pets {
             text-align: center;
@@ -75,10 +88,12 @@
             max-width: 300px;
             border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 增加图片阴影 */
         }
         .cute-pets p {
             font-size: 18px;
             color: #555;
+            font-family: 'Comic Sans MS', sans-serif;
         }
         .footer {
             text-align: center;
@@ -111,16 +126,16 @@
 
         <div class="image-gallery">
             <div>
-                <img src="直拍1.jpg">
-                <p class="image-caption">SVT 11th Mini Album God of Music 舞台</p>
+                <img src="直拍1.jpg" alt="舞台表演1">
+                <p class="image-caption">SVT 11th Mini Album God of Music</p>
             </div>
             <div>
-                <img src="直拍2.jpg">
-                <p class="image-caption">SVT 12th Mini Album Love, Money, Fame 舞台</p>
+                <img src="直拍2.jpg" alt="舞台表演2">
+                <p class="image-caption">SVT 12th Mini Album Love, Money, Fame</p>
             </div>
             <div>
-                <img src="直拍3.jpg">
-                <p class="image-caption">BSS 1st Single Album Fighting 舞台</p>
+                <img src="直拍3.jpg" alt="舞台表演3">
+                <p class="image-caption">BSS 1st Single Album Fighting</p>
             </div>
         </div>
     </section>
@@ -130,16 +145,9 @@
         <div class="section-title">三、权顺荣和小狗拿铁</div>
         <p class="bio">Hoshi除了在舞台上闪亮登场外，私下也是一个充满爱心的宠物主人。他与他的小狗“拿铁”有着深厚的感情。无论是平日里放松的时候，还是在忙碌的工作间隙，Hoshi总能分享一些与拿铁在一起的可爱时光。</p>
         
-        <img src="latte&hoshi.jpg">
+        <img src="latte&hoshi.jpg" alt="权顺荣和拿铁">
         <p>权顺荣与宠物狗拿铁一起度过的温馨时光。</p>
         
-        <img src="latte.jpg">
+        <img src="latte.jpg" alt="拿铁">
         <p>拿铁：Hoshi生活中的小伙伴</p>
-    </section>
-
-    <footer class="footer">
-        <p>感谢你对Seventeen权顺荣的关注，继续追随他的舞台与生活。</p>
-    </footer>
-
-</body>
-</html>
+    </section
